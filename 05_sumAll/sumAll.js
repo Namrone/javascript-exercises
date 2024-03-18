@@ -1,6 +1,6 @@
 const sumAll = function sumAll(num1, num2){
     let sum = 0;
-    if(num1 > 0 && num2 > 0){
+    if(num1 > 0 && num2 > 0 && typeof(num1) === 'number' && typeof(num2) === 'number'){
         for(let count = Math.min(num1,num2); count <= Math.max(num1,num2); count++){
             sum += count;
         }
